@@ -39,6 +39,7 @@ li {
 }
 a {
   text-decoration: none;
+  color: var(--p-txt);
   /* color: var(--p-txt); */
 }
 /* header */
@@ -280,6 +281,57 @@ nav .button {
   height: 45px;
   object-fit: contain;
   filter: grayscale(1) brightness(0) invert(1);
+}
+/* end options */
+
+/* footer */
+footer {
+  background-color: var(--s-color);
+  color: var(--p-txt);
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+footer .footer-links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer .footer-links a {
+  color: var(--s-txt);
+  font-size: var(--txt-s);
+}
+
+footer .footer-links a:hover {
+  color: var(--t-y);
+}
+
+footer .copyright {
+  color: var(--t-txt);
+  font-size: var(--txt-s);
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  footer .footer-content {
+    padding: 0 1rem;
+  }
+  footer .footer-links {
+    gap: 1rem;
+  }
 }
 @media (max-width: 768px) {
   .container {
