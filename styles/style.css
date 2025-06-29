@@ -9,6 +9,7 @@
   --s-txt: #b0b0b0;
   --t-txt: #888888;
   --t-y: #ffa726;
+  --t-y2: #e69e33;
   --p-btn: #ff3b3b;
   --s-btn: #e32a2a;
 
@@ -234,6 +235,52 @@ nav .button {
   }
 }
 
+/* end trending */
+
+/* options */
+
+.options {
+  background-color: var(--p-color);
+}
+.options .card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 1rem;
+}
+.card-list .card {
+  border-radius: var(--br-r);
+  flex-grow: 1;
+  padding: var(--txt-l);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 120px;
+  cursor: pointer;
+  transition: scale 0.1s ease-in;
+  .text {
+    line-height: 1.5;
+    p {
+      font-weight: 300;
+    }
+  }
+}
+.card-list .card:hover {
+  scale: 1.009;
+}
+
+.today-shows {
+  background: linear-gradient(90deg, var(--p-btn) 0%, var(--s-btn) 100%);
+}
+.upcoming-shows {
+  background: linear-gradient(90deg, var(--t-y2) 0%, var(--t-y) 100%);
+}
+.card-list .card .icon img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  filter: grayscale(1) brightness(0) invert(1);
+}
 @media (max-width: 768px) {
   .container {
     padding: 1rem 2rem;
