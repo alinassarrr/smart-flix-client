@@ -40,3 +40,46 @@ a {
   text-decoration: none;
   /* color: var(--p-txt); */
 }
+/* header */
+header nav {
+  display: flex;
+  flex-direction: row;
+  color: var(--p-txt);
+  background-color: var(--s-color);
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+nav li a {
+  color: inherit;
+}
+
+.container {
+  padding: 2rem 4rem;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--txt-2xl);
+}
+header .container {
+  padding: 1rem 4rem;
+}
+.mobile-nav {
+  display: none;
+  align-self: center;
+}
+
+nav .button {
+  color: var(--p-txt);
+  background-color: var(--p-btn);
+  padding: var(--txt-s) var(--txt-l);
+  border-radius: var(--br-r);
+}
+/* end header */
