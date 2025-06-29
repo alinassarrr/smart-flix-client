@@ -137,3 +137,34 @@ nav .button {
 }
 
 /* end hero */
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--p-color);
+  align-items: center;
+  padding-top: var(--txt-xl);
+  padding-bottom: var(--txt-xl);
+}
+
+.banner .welcome {
+  text-align: center;
+  h2 {
+    color: var(--t-y);
+  }
+}
+.banner p {
+  font-weight: 200;
+  color: var(--s-txt);
+}
+.banner .today {
+  text-align: center;
+}
+.showing {
+  text-align: center;
+}
+.showing-num {
+  color: var(--s-btn);
+}
+/* end banner */
