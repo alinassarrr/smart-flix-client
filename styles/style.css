@@ -44,6 +44,12 @@ a {
   /* color: var(--p-txt); */
 }
 /* header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--s-color);
+}
 header nav {
   display: flex;
   flex-direction: row;
@@ -60,7 +66,12 @@ nav ul {
   gap: 1rem;
 }
 nav li a {
-  color: inherit;
+  color: var(--s-txt);
+}
+
+li .selected {
+  border-bottom: 1px solid var(--s-btn);
+  color: var(--p-txt);
 }
 
 .container {
@@ -364,6 +375,14 @@ footer .copyright {
     display: flex;
     justify-content: center;
     background-color: var(--s-color);
+    padding-bottom: 1rem;
+  }
+  .second-nav a {
+    color: var(--s-txt);
+    transition: border-bottom 0.3ms ease-in;
+  }
+  .second-nav .selected {
+    color: var(--p-txt);
   }
   .mobile-nav {
     display: flex;
