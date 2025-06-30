@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smartflix</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/today-shows.css" />
+    <link rel="stylesheet" href="../styles/upcoming-shows.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="container">
+        <div class="logo">Smartflix</div>
+        <ul class="nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./today-shows.html">Todays Shows</a></li>
+          <li><a href="./upcoming-shows.html" class="selected">Upcoming</a></li>
+        </ul>
+        <a href="index.html" class="button">SignUp</a>
+      </nav>
+      <div class="second-nav">
+        <ul class="mobile-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./today-shows.html">Todays Shows</a></li>
+          <li><a href="./upcoming-shows.html" class="selected">Upcoming</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="today container">
+      <h1>Upcoming Shows</h1>
+      <p>Check movies that are coming soon.</p>
+    </div>
+    <section class="filter container">
+      <div class="filter-item selected">Tomorrow</div>
+      <div class="filter-item">This Week</div>
+      <div class="filter-item">Next Week</div>
+    </section>
+    <section class="upcoming container">
+      <div class="upcoming-grid">
+        <div class="upcoming-card">
+          <div class="poster">
+            <img src="../assets//movie.avif" alt="" />
+            <div class="badge">Coming Soon</div>
+          </div>
+          <div class="upcoming-details">
+            <div class="text">
+              <h2>Movie Name</h2>
+              <div class="genre">
+                <p>action</p>
+                <p>comedy</p>
+              </div>
+            </div>
+            <div class="date">Show Date: 1 July-2030</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-logo">Smartflix</div>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Today's Shows</a></li>
+          <li><a href="index.html">Upcoming</a></li>
+        </ul>
+        <div class="footer-copy">
+          &copy; 2025 Smartflix. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
