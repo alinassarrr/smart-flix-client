@@ -87,7 +87,7 @@ body {
 
 .show-time {
   margin: 0.5rem 0;
-  text-align: left;
+  text-align: center;
 }
 
 .show-time h2 {
@@ -142,7 +142,6 @@ body {
     gap: 0.7rem;
     padding: 0.7rem;
     width: 60%;
-    border: 1px solid white;
     margin: 1rem auto;
   }
   .show-movie {
