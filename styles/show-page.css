@@ -27,9 +27,12 @@ body {
 }
 .upcoming-card {
   padding: 0;
+  min-width: 320px;
 }
 .upcoming-card img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: var(--br-r);
 }
 
