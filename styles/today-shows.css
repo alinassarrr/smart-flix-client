@@ -109,6 +109,11 @@ body {
 
 .book {
   font-size: var(--txt-l);
+  cursor: pointer;
+}
+
+.back {
+  cursor: pointer;
 }
 
 @media (max-width: 900px) {

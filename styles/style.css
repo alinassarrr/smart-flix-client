@@ -59,6 +59,10 @@ header nav {
   align-items: center;
   position: sticky;
 }
+header .logo {
+  font-size: var(--txt-xl);
+  font-weight: bold;
+}
 
 nav ul {
   display: flex;
@@ -142,6 +146,7 @@ nav .button {
 }
 .book {
   text-decoration: none;
+  font-weight: bold;
   color: var(--p-txt);
   padding: var(--txt-s) var(--txt-l);
   background-color: var(--p-btn);
@@ -181,6 +186,7 @@ nav .button {
 }
 .showing {
   text-align: center;
+  cursor: pointer;
 }
 .showing-num {
   color: var(--s-btn);
@@ -396,8 +402,14 @@ footer .copyright {
   }
 }
 @media (max-width: 600px) {
-  .container {
+  header .container {
     padding: 0.5rem 0.5rem;
+  }
+  header .logo {
+    font-size: var(--txt-l);
+  }
+  header .button {
+    padding: var(--txt-s) var(--txt-m);
   }
   .trending .movie-list {
     grid-template-columns: 1fr;
