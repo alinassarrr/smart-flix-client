@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smartflix</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -34,7 +35,7 @@
           Discover movies, reserve your favorite seat, and enjoy unforgettable
           cinema nights all in a few clicks.
         </p>
-        <a href="" class="book">Book Now</a>
+        <a class="book">Book Now</a>
       </div>
     </section>
     <!-- Banner -->
@@ -44,11 +45,11 @@
         <p>Enjoy your booking journey</p>
       </div>
       <div class="today">
-        <h3 class="date">Today,June 29 2025</h3>
-        <p class="time">12:05pm</p>
+        <h3 class="date"></h3>
+        <p class="time"></p>
       </div>
       <div class="showing">
-        <h2 class="showing-num">10</h2>
+        <h2 class="showing-num"></h2>
         <p>Movies showing today</p>
       </div>
     </section>
@@ -137,7 +138,7 @@
       </div>
     </section>
     <!-- Show Options -->
-    <section class="options container">
+    <section class="options container" id="options">
       <h1 class="sec-title">Our Shows</h1>
       <div class="card-list">
         <div class="card today-shows">
@@ -201,5 +202,8 @@
         </div>
       </div>
     </footer>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
