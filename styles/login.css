@@ -1,0 +1,95 @@
+@import url("./style.css");
+
+body {
+  background-color: var(--s-color);
+}
+.login {
+  min-width: 500px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 12px;
+  background: var(--p-color);
+}
+.login h1 {
+  color: var(--p-txt);
+  font-size: var(--txt-xl);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+form label {
+  color: var(--s-txt);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+form input {
+  width: 100%;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid white;
+  border-radius: 12px;
+  font-size: var(--txt-m);
+  background: var(--p-color);
+  color: var(--p-txt);
+  margin-bottom: 0.5rem;
+  transition: border-color 0.2s;
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+  border-color: var(--p-btn);
+  outline: none;
+}
+
+form button[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  color: var(--txt-p);
+  border: none;
+  border-radius: 4px;
+  font-size: var(--txt-m);
+  background: var(--s-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+  background: var(--p-btn);
+}
+
+form button[type="submit"]:hover {
+  color: var(--p-txt);
+  background-color: var(--s-btn);
+}
+
+form a {
+  color: var(--txt);
+  font-weight: 500;
+  transition: color 0.2s;
+  color: var(--p-btn);
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+.redirect {
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+  }
+  form button[type="submit"] {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+}
