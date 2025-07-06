@@ -58,7 +58,7 @@ window.onload = () => {
       }
     });
 };
-
+// From MDN web docs
 function formatDate(dateString) {
   const options = {
     hour: "2-digit",
@@ -67,4 +67,11 @@ function formatDate(dateString) {
   };
   const date = new Date(dateString);
   return date.toLocaleTimeString("en-US", options);
+}
+const userNav = document.querySelector(".button");
+if (localStorage.getItem("user")) {
+  userNav.innerHTML = "<div>Your Profile</div>";
+  userNav.addEventListener("click", () => {
+    console.log("Nav to Profile");
+  });
 }
