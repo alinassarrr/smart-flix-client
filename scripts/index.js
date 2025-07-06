@@ -1,3 +1,12 @@
+window.onload = () => {
+  console.log(BASE_URL);
+  axios.post(`${BASE_URL}/showsNum`, { date: dateInDB }).then((response) => {
+    console.log(response.data);
+    const totalShows = document.querySelector(".showing-num");
+    totalShows.innerText =
+      response.data.status == 200 ? response.data.data : response.data.message;
+  });
+};
 const book = document.querySelector(".book");
 const options = document.getElementById("options");
 book.addEventListener("click", () => {
@@ -59,16 +68,6 @@ function updateDate() {
 }
 
 setInterval(updateDate, 1000);
-
-window.onload = () => {
-  console.log(BASE_URL);
-  axios.post(`${BASE_URL}/showsNum`, { date: dateInDB }).then((response) => {
-    console.log(response.data);
-    const totalShows = document.querySelector(".showing-num");
-    totalShows.innerText =
-      response.data.status == 200 ? response.data.data : response.data.message;
-  });
-};
 
 const showing = document.querySelector(".showing");
 const todayShows = document.querySelector(".today-shows");
