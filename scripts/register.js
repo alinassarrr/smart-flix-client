@@ -22,7 +22,9 @@ form.addEventListener("submit", (e) => {
       if (response.data.status == 200) {
         alert(`${response.data.data}, Time to Login!`);
 
-        window.location.replace(`${BASE_URL}/pages/login.html`);
+        window.location.replace(
+          "http://localhost:8080/smart-flix/smart-flix-client/pages/login.html"
+        );
       } else {
         alert(response.data.message);
       }
