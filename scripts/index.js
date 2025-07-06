@@ -25,6 +25,7 @@ function matchDB(m) {
   if (m.toString().length == 1) {
     return `0${m}`;
   }
+  return m.toString();
 }
 const month = months[date.getMonth()];
 const day = date.getDate();
@@ -60,16 +61,13 @@ function updateDate() {
 setInterval(updateDate, 1000);
 
 window.onload = () => {
-  axios
-    .post(
-      "http://localhost:8080/smart-flix/smart-flix-server/controllers/shows/get_shows_num.php",
-      { date: dateInDB }
-    )
-    .then((response) => {
-      console.log(response.data.showsNum);
-      const totalShows = document.querySelector(".showing-num");
-      totalShows.innerText = response.data.showsNum;
-    });
+  console.log(BASE_URL);
+  axios.post(`${BASE_URL}/showsNum`, { date: dateInDB }).then((response) => {
+    console.log(response.data);
+    const totalShows = document.querySelector(".showing-num");
+    totalShows.innerText =
+      response.data.status == 200 ? response.data.data : response.data.message;
+  });
 };
 
 const showing = document.querySelector(".showing");
